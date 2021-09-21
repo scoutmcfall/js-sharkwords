@@ -29,6 +29,11 @@ const createDivsForChars = (word) => {
 // Loop over each letter in `ALPHABET` and generate buttons.
 //
 const generateLetterButtons = () => {
+  for (const letter in ALPHABET){
+  // const letter = letter; 
+    $('#letter-buttons').append
+    (`<div class="letter-button ${letter}"><button>${letter}</button></div`);
+  }
   // Replace this with your code
 };
 
